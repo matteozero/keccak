@@ -61,6 +61,6 @@ void main() {
           31,
         ]))),
         "8ae1aa597fa146ebd3aa2ceddf360668dea5e526567e92b0321816a4e895bd2d");
-    expect(() => keccak(null), throwsNoSuchMethodError);
+    expect(() => keccak(Uint8List(10)), throwsNoSuchMethodError);
   });
 }
